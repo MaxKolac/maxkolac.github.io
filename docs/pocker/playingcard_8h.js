@@ -1,6 +1,12 @@
 var playingcard_8h =
 [
     [ "PlayingCard", "struct_playing_card.html", "struct_playing_card" ],
+    [ "CARDNAME_MAX_LENGTH", "playingcard_8h.html#ae1816c03818529eb8ff7ac44ffb67fa6", null ],
+    [ "CARDS_PER_PLAYER", "playingcard_8h.html#aaa4f5c367c62f3188210c95da4892e9a", null ],
+    [ "COMM_CARDS_COUNT", "playingcard_8h.html#af3305c5f87747da593e54426c1a051bd", null ],
+    [ "DECK_LENGTH", "playingcard_8h.html#aceb4e0ff16d88043e82ff42db09b7ae1", null ],
+    [ "PIPS_PER_SUIT", "playingcard_8h.html#a2f77890b3efeda8d9d0dc03264698fad", null ],
+    [ "SUITS_COUNT", "playingcard_8h.html#a4989d61006e25851b3aa836ba95efcdf", null ],
     [ "Pip", "playingcard_8h.html#a5370548e1424423a5fa2fe356a721db2", [
       [ "TWO", "playingcard_8h.html#a5370548e1424423a5fa2fe356a721db2a0e793500a63ffa575b9b712ca3bc9851", null ],
       [ "THREE", "playingcard_8h.html#a5370548e1424423a5fa2fe356a721db2a1251fbf93888ad32fe0ae54d49bcef17", null ],

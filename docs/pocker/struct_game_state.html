@@ -98,60 +98,61 @@ $(function(){initNavTree('struct_game_state.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 
-<p>Represents the current state of a poker game. Recommended to initialize this struct through gsCreateNew(), but hey I'm not your mom.  
+<p>Represents the current state of a poker game.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="gamestate_8h_source.html">gamestate.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a1c6b84aaf4e2937853425abd8c1183ff" id="r_a1c6b84aaf4e2937853425abd8c1183ff"><td class="memItemLeft" align="right" valign="top"><a id="a1c6b84aaf4e2937853425abd8c1183ff" name="a1c6b84aaf4e2937853425abd8c1183ff"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>revealed_comm_cards</b></td></tr>
-<tr class="memdesc:a1c6b84aaf4e2937853425abd8c1183ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of community cards which are "face-up" meaning visible to players. <br /></td></tr>
-<tr class="separator:a1c6b84aaf4e2937853425abd8c1183ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7851a588b7d917ae4f3f837b9175e67" id="r_ab7851a588b7d917ae4f3f837b9175e67"><td class="memItemLeft" align="right" valign="top"><a id="ab7851a588b7d917ae4f3f837b9175e67" name="ab7851a588b7d917ae4f3f837b9175e67"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>dealer_player</b></td></tr>
-<tr class="memdesc:ab7851a588b7d917ae4f3f837b9175e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the player with dealer's button. <br /></td></tr>
-<tr class="separator:ab7851a588b7d917ae4f3f837b9175e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bf451d9fa062a533a8b9f9ec7667adc" id="r_a0bf451d9fa062a533a8b9f9ec7667adc"><td class="memItemLeft" align="right" valign="top"><a id="a0bf451d9fa062a533a8b9f9ec7667adc" name="a0bf451d9fa062a533a8b9f9ec7667adc"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>s_blind_player</b></td></tr>
-<tr class="memdesc:a0bf451d9fa062a533a8b9f9ec7667adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the player with "small blind" status. <br /></td></tr>
-<tr class="separator:a0bf451d9fa062a533a8b9f9ec7667adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad63c6781c18b934c7dfbebccedbd4264" id="r_ad63c6781c18b934c7dfbebccedbd4264"><td class="memItemLeft" align="right" valign="top"><a id="ad63c6781c18b934c7dfbebccedbd4264" name="ad63c6781c18b934c7dfbebccedbd4264"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>b_blind_player</b></td></tr>
-<tr class="memdesc:ad63c6781c18b934c7dfbebccedbd4264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the player with "big blind" status. <br /></td></tr>
-<tr class="separator:ad63c6781c18b934c7dfbebccedbd4264"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfd73fbf456e2f05a13629a71f929c02" id="r_acfd73fbf456e2f05a13629a71f929c02"><td class="memItemLeft" align="right" valign="top"><a id="acfd73fbf456e2f05a13629a71f929c02" name="acfd73fbf456e2f05a13629a71f929c02"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>current_player</b></td></tr>
-<tr class="memdesc:acfd73fbf456e2f05a13629a71f929c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the player who currently has a chance to act. <br /></td></tr>
-<tr class="separator:acfd73fbf456e2f05a13629a71f929c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31218fe188b64c28af9047c61e4d6d0" id="r_ae31218fe188b64c28af9047c61e4d6d0"><td class="memItemLeft" align="right" valign="top"><a id="ae31218fe188b64c28af9047c61e4d6d0" name="ae31218fe188b64c28af9047c61e4d6d0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>betting_round</b></td></tr>
-<tr class="memdesc:ae31218fe188b64c28af9047c61e4d6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of the betting round. There are 4 rounds: pre-flop, flop, turn and river. <br /></td></tr>
-<tr class="separator:ae31218fe188b64c28af9047c61e4d6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a913dba8a7fce241f8b15d2ce01bad9" id="r_a4a913dba8a7fce241f8b15d2ce01bad9"><td class="memItemLeft" align="right" valign="top"><a id="a4a913dba8a7fce241f8b15d2ce01bad9" name="a4a913dba8a7fce241f8b15d2ce01bad9"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>turns_left</b></td></tr>
-<tr class="memdesc:a4a913dba8a7fce241f8b15d2ce01bad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many turns are left until the current betting round ends. <br /></td></tr>
-<tr class="separator:a4a913dba8a7fce241f8b15d2ce01bad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af46b7128d94bab6004b2fd0366da0d88" id="r_af46b7128d94bab6004b2fd0366da0d88"><td class="memItemLeft" align="right" valign="top"><a id="af46b7128d94bab6004b2fd0366da0d88" name="af46b7128d94bab6004b2fd0366da0d88"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>raises_performed</b></td></tr>
-<tr class="memdesc:af46b7128d94bab6004b2fd0366da0d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many raises have been called by all players in the current betting round. <br /></td></tr>
-<tr class="separator:af46b7128d94bab6004b2fd0366da0d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3893115b475d6b929789272a9e84d487" id="r_a3893115b475d6b929789272a9e84d487"><td class="memItemLeft" align="right" valign="top"><a id="a3893115b475d6b929789272a9e84d487" name="a3893115b475d6b929789272a9e84d487"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>all_but_one_folded</b></td></tr>
-<tr class="memdesc:a3893115b475d6b929789272a9e84d487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to indicate if all but one player have folded their cards - this indicates an auto-win for that player. <br /></td></tr>
+<tr class="memdesc:a3893115b475d6b929789272a9e84d487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean to indicate if all but one player have folded their cards - this indicates an auto-win for that <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>. <br /></td></tr>
 <tr class="separator:a3893115b475d6b929789272a9e84d487"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5664245ea565d200a8c57cac74234a4" id="r_af5664245ea565d200a8c57cac74234a4"><td class="memItemLeft" align="right" valign="top"><a id="af5664245ea565d200a8c57cac74234a4" name="af5664245ea565d200a8c57cac74234a4"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>pot</b></td></tr>
-<tr class="memdesc:af5664245ea565d200a8c57cac74234a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount currently in the pot. <br /></td></tr>
-<tr class="separator:af5664245ea565d200a8c57cac74234a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad63c6781c18b934c7dfbebccedbd4264" id="r_ad63c6781c18b934c7dfbebccedbd4264"><td class="memItemLeft" align="right" valign="top"><a id="ad63c6781c18b934c7dfbebccedbd4264" name="ad63c6781c18b934c7dfbebccedbd4264"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>b_blind_player</b></td></tr>
+<tr class="memdesc:ad63c6781c18b934c7dfbebccedbd4264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> with "big blind" status. <br /></td></tr>
+<tr class="separator:ad63c6781c18b934c7dfbebccedbd4264"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf40d97c4c38ada591cb11572d52aad6" id="r_acf40d97c4c38ada591cb11572d52aad6"><td class="memItemLeft" align="right" valign="top"><a id="acf40d97c4c38ada591cb11572d52aad6" name="acf40d97c4c38ada591cb11572d52aad6"></a>
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>bet</b></td></tr>
 <tr class="memdesc:acf40d97c4c38ada591cb11572d52aad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of the current bet. <br /></td></tr>
 <tr class="separator:acf40d97c4c38ada591cb11572d52aad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31218fe188b64c28af9047c61e4d6d0" id="r_ae31218fe188b64c28af9047c61e4d6d0"><td class="memItemLeft" align="right" valign="top"><a id="ae31218fe188b64c28af9047c61e4d6d0" name="ae31218fe188b64c28af9047c61e4d6d0"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>betting_round</b></td></tr>
+<tr class="memdesc:ae31218fe188b64c28af9047c61e4d6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of the betting round. There are 4 rounds: pre-flop, flop, turn and river. <br /></td></tr>
+<tr class="separator:ae31218fe188b64c28af9047c61e4d6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd73fbf456e2f05a13629a71f929c02" id="r_acfd73fbf456e2f05a13629a71f929c02"><td class="memItemLeft" align="right" valign="top"><a id="acfd73fbf456e2f05a13629a71f929c02" name="acfd73fbf456e2f05a13629a71f929c02"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>current_player</b></td></tr>
+<tr class="memdesc:acfd73fbf456e2f05a13629a71f929c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> who is currently deciding what action to take. <br /></td></tr>
+<tr class="separator:acfd73fbf456e2f05a13629a71f929c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7851a588b7d917ae4f3f837b9175e67" id="r_ab7851a588b7d917ae4f3f837b9175e67"><td class="memItemLeft" align="right" valign="top"><a id="ab7851a588b7d917ae4f3f837b9175e67" name="ab7851a588b7d917ae4f3f837b9175e67"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>dealer_player</b></td></tr>
+<tr class="memdesc:ab7851a588b7d917ae4f3f837b9175e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> with dealer's button. <br /></td></tr>
+<tr class="separator:ab7851a588b7d917ae4f3f837b9175e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5664245ea565d200a8c57cac74234a4" id="r_af5664245ea565d200a8c57cac74234a4"><td class="memItemLeft" align="right" valign="top"><a id="af5664245ea565d200a8c57cac74234a4" name="af5664245ea565d200a8c57cac74234a4"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>pot</b></td></tr>
+<tr class="memdesc:af5664245ea565d200a8c57cac74234a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount currently in the pot. <br /></td></tr>
+<tr class="separator:af5664245ea565d200a8c57cac74234a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af46b7128d94bab6004b2fd0366da0d88" id="r_af46b7128d94bab6004b2fd0366da0d88"><td class="memItemLeft" align="right" valign="top"><a id="af46b7128d94bab6004b2fd0366da0d88" name="af46b7128d94bab6004b2fd0366da0d88"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>raises_performed</b></td></tr>
+<tr class="memdesc:af46b7128d94bab6004b2fd0366da0d88"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many raises have been called by all players in the current betting round. <br /></td></tr>
+<tr class="separator:af46b7128d94bab6004b2fd0366da0d88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6b84aaf4e2937853425abd8c1183ff" id="r_a1c6b84aaf4e2937853425abd8c1183ff"><td class="memItemLeft" align="right" valign="top"><a id="a1c6b84aaf4e2937853425abd8c1183ff" name="a1c6b84aaf4e2937853425abd8c1183ff"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>revealed_comm_cards</b></td></tr>
+<tr class="memdesc:a1c6b84aaf4e2937853425abd8c1183ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of community cards which are "face-up" meaning visible to players. <br /></td></tr>
+<tr class="separator:a1c6b84aaf4e2937853425abd8c1183ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bf451d9fa062a533a8b9f9ec7667adc" id="r_a0bf451d9fa062a533a8b9f9ec7667adc"><td class="memItemLeft" align="right" valign="top"><a id="a0bf451d9fa062a533a8b9f9ec7667adc" name="a0bf451d9fa062a533a8b9f9ec7667adc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>s_blind_player</b></td></tr>
+<tr class="memdesc:a0bf451d9fa062a533a8b9f9ec7667adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> with "small blind" status. <br /></td></tr>
+<tr class="separator:a0bf451d9fa062a533a8b9f9ec7667adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a913dba8a7fce241f8b15d2ce01bad9" id="r_a4a913dba8a7fce241f8b15d2ce01bad9"><td class="memItemLeft" align="right" valign="top"><a id="a4a913dba8a7fce241f8b15d2ce01bad9" name="a4a913dba8a7fce241f8b15d2ce01bad9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>turns_left</b></td></tr>
+<tr class="memdesc:a4a913dba8a7fce241f8b15d2ce01bad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">How many turns are left until the current betting round ends. <br /></td></tr>
+<tr class="separator:a4a913dba8a7fce241f8b15d2ce01bad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Represents the current state of a poker game. Recommended to initialize this struct through gsCreateNew(), but hey I'm not your mom. </p>
+<div class="textblock"><p>Represents the current state of a poker game. </p>
+<p>Recommended to initialize this struct through <a class="el" href="gamestate_8h.html#a689a62e2ee5b6fd24604355e70911b02" title="Creates a new, clean and unconfigured GameState struct.">gsCreateNew()</a>, but hey I'm not your mom. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="gamestate_8h_source.html">gamestate.h</a></li>
 </ul>
@@ -161,7 +162,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>bet</b></td><
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_game_state.html">GameState</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

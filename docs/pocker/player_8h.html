@@ -93,6 +93,7 @@ $(function(){initNavTree('player_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">player.h File Reference</div></div>
 </div><!--header-->
@@ -101,8 +102,8 @@ $(function(){initNavTree('player_8h.html',''); initResizable(); });
 <p>Contains a <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct and related functions.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="constants_8h_source.html">constants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="playingcard_8h_source.html">playingcard.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="gamerules_8h_source.html">gamerules.h</a>&quot;</code><br />
 </div>
 <p><a href="player_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -112,32 +113,108 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a single player.  <a href="struct_player.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ac9dd10c653895d3ce47d315874c91454" id="r_ac9dd10c653895d3ce47d315874c91454"><td class="memItemLeft" align="right" valign="top"><a id="ac9dd10c653895d3ce47d315874c91454" name="ac9dd10c653895d3ce47d315874c91454"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SCORE_TABLE_SIZE</b>&#160;&#160;&#160;10</td></tr>
+<tr class="memdesc:ac9dd10c653895d3ce47d315874c91454"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the size of the scores array. <br /></td></tr>
+<tr class="separator:ac9dd10c653895d3ce47d315874c91454"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1c94e99e2adfffbd43790d207bf0d826" id="r_a1c94e99e2adfffbd43790d207bf0d826"><td class="memItemLeft" align="right" valign="top"><a id="a1c94e99e2adfffbd43790d207bf0d826" name="a1c94e99e2adfffbd43790d207bf0d826"></a>
-<a class="el" href="struct_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>playerCreateNew</b> ()</td></tr>
+<tr class="memitem:a1c94e99e2adfffbd43790d207bf0d826" id="r_a1c94e99e2adfffbd43790d207bf0d826"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c94e99e2adfffbd43790d207bf0d826">playerCreateNew</a> ()</td></tr>
+<tr class="memdesc:a1c94e99e2adfffbd43790d207bf0d826"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct.  <br /></td></tr>
 <tr class="separator:a1c94e99e2adfffbd43790d207bf0d826"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67d6de1c3a5a11f607da98451f72e8e3" id="r_a67d6de1c3a5a11f607da98451f72e8e3"><td class="memItemLeft" align="right" valign="top"><a id="a67d6de1c3a5a11f607da98451f72e8e3" name="a67d6de1c3a5a11f607da98451f72e8e3"></a>
-<a class="el" href="struct_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>playerCreateNewWithFunds</b> (int)</td></tr>
+<tr class="memitem:a67d6de1c3a5a11f607da98451f72e8e3" id="r_a67d6de1c3a5a11f607da98451f72e8e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67d6de1c3a5a11f607da98451f72e8e3">playerCreateNewWithFunds</a> (int)</td></tr>
+<tr class="memdesc:a67d6de1c3a5a11f607da98451f72e8e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct instance and sets its funds value.  <br /></td></tr>
 <tr class="separator:a67d6de1c3a5a11f607da98451f72e8e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22bab65bbc5d7660d7c7c6b24b370d01" id="r_a22bab65bbc5d7660d7c7c6b24b370d01"><td class="memItemLeft" align="right" valign="top"><a id="a22bab65bbc5d7660d7c7c6b24b370d01" name="a22bab65bbc5d7660d7c7c6b24b370d01"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>takeAction</b> (<a class="el" href="struct_player.html">Player</a> *)</td></tr>
-<tr class="memdesc:a22bab65bbc5d7660d7c7c6b24b370d01"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO. <br /></td></tr>
-<tr class="separator:a22bab65bbc5d7660d7c7c6b24b370d01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21bff9875ade3e0b5ed17468f818b7a4" id="r_a21bff9875ade3e0b5ed17468f818b7a4"><td class="memItemLeft" align="right" valign="top"><a id="a21bff9875ade3e0b5ed17468f818b7a4" name="a21bff9875ade3e0b5ed17468f818b7a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>resetScores</b> (<a class="el" href="struct_player.html">Player</a> *)</td></tr>
-<tr class="memdesc:a21bff9875ade3e0b5ed17468f818b7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets player's scores to an array of zeros. Remember that C does not have zero-initialization. The scores array WILL be filled with gibberish data. <br /></td></tr>
+<tr class="memitem:a21bff9875ade3e0b5ed17468f818b7a4" id="r_a21bff9875ade3e0b5ed17468f818b7a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a21bff9875ade3e0b5ed17468f818b7a4">resetScores</a> (<a class="el" href="struct_player.html">Player</a> *)</td></tr>
+<tr class="memdesc:a21bff9875ade3e0b5ed17468f818b7a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets player's scores to an array of zeros.  <br /></td></tr>
 <tr class="separator:a21bff9875ade3e0b5ed17468f818b7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains a <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct and related functions. </p>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a1c94e99e2adfffbd43790d207bf0d826" name="a1c94e99e2adfffbd43790d207bf0d826"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c94e99e2adfffbd43790d207bf0d826">&#9670;&#160;</a></span>playerCreateNew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_player.html">Player</a> * playerCreateNew </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to it. </dd></dl>
+
+</div>
+</div>
+<a id="a67d6de1c3a5a11f607da98451f72e8e3" name="a67d6de1c3a5a11f607da98451f72e8e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d6de1c3a5a11f607da98451f72e8e3">&#9670;&#160;</a></span>playerCreateNewWithFunds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_player.html">Player</a> * playerCreateNewWithFunds </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>initial_funds</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct instance and sets its funds value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initial_funds</td><td>The amount of funds to be assigned. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the created struct.</dd></dl>
+<p>A rude remainder on why lack of polymorphism is a bit of a bummer. </p>
+
+</div>
+</div>
+<a id="a21bff9875ade3e0b5ed17468f818b7a4" name="a21bff9875ade3e0b5ed17468f818b7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21bff9875ade3e0b5ed17468f818b7a4">&#9670;&#160;</a></span>resetScores()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void resetScores </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>self</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resets player's scores to an array of zeros. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">self</td><td>The <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> struct whose table should be reset.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Remember that C does not have zero-initialization. The scores array WILL be filled with gibberish data. </p>
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="player_8h.html">player.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

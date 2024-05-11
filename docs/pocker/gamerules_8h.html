@@ -93,8 +93,8 @@ $(function(){initNavTree('gamerules_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">gamerules.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -111,32 +111,50 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a set of customizable rules of the poker game.  <a href="struct_game_rule_set.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a45ff720125886fcd0c2b18c13759ce51" id="r_a45ff720125886fcd0c2b18c13759ce51"><td class="memItemLeft" align="right" valign="top"><a id="a45ff720125886fcd0c2b18c13759ce51" name="a45ff720125886fcd0c2b18c13759ce51"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BETS_PER_ROUND</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:a45ff720125886fcd0c2b18c13759ce51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of raises per a single betting round. <br /></td></tr>
+<tr class="separator:a45ff720125886fcd0c2b18c13759ce51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24136eebb371603915f6cdcbc962bf0b" id="r_a24136eebb371603915f6cdcbc962bf0b"><td class="memItemLeft" align="right" valign="top"><a id="a24136eebb371603915f6cdcbc962bf0b" name="a24136eebb371603915f6cdcbc962bf0b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_ROUNDS_PER_GAME</b>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a24136eebb371603915f6cdcbc962bf0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of betting rounds until a showdown is performed. <br /></td></tr>
+<tr class="separator:a24136eebb371603915f6cdcbc962bf0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf24d78e587cf8f5a8476c81a4519d1" id="r_aeaf24d78e587cf8f5a8476c81a4519d1"><td class="memItemLeft" align="right" valign="top"><a id="aeaf24d78e587cf8f5a8476c81a4519d1" name="aeaf24d78e587cf8f5a8476c81a4519d1"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_PLAYER_COUNT</b>&#160;&#160;&#160;3</td></tr>
+<tr class="memdesc:aeaf24d78e587cf8f5a8476c81a4519d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum amount of Players. <br /></td></tr>
+<tr class="separator:aeaf24d78e587cf8f5a8476c81a4519d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09ee2ecaf3bb5afe58b42b49bb658745" id="r_a09ee2ecaf3bb5afe58b42b49bb658745"><td class="memItemLeft" align="right" valign="top"><a id="a09ee2ecaf3bb5afe58b42b49bb658745" name="a09ee2ecaf3bb5afe58b42b49bb658745"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_PLAYER_COUNT</b>&#160;&#160;&#160;12</td></tr>
+<tr class="memdesc:a09ee2ecaf3bb5afe58b42b49bb658745"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of Players. <br /></td></tr>
+<tr class="separator:a09ee2ecaf3bb5afe58b42b49bb658745"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57fbda4370a968c32366435b4e78973f" id="r_a57fbda4370a968c32366435b4e78973f"><td class="memItemLeft" align="right" valign="top"><a id="a57fbda4370a968c32366435b4e78973f" name="a57fbda4370a968c32366435b4e78973f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_FUNDS_PER_PLAYER</b>&#160;&#160;&#160;100</td></tr>
+<tr class="memdesc:a57fbda4370a968c32366435b4e78973f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minimum amount of starting funds for each <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>. <br /></td></tr>
+<tr class="separator:a57fbda4370a968c32366435b4e78973f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d5ba3570e25b687e6df86a39a276eec" id="r_a9d5ba3570e25b687e6df86a39a276eec"><td class="memItemLeft" align="right" valign="top"><a id="a9d5ba3570e25b687e6df86a39a276eec" name="a9d5ba3570e25b687e6df86a39a276eec"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_FUNDS_PER_PLAYER</b>&#160;&#160;&#160;10000</td></tr>
+<tr class="memdesc:a9d5ba3570e25b687e6df86a39a276eec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum amount of starting funds for each <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>. Increasing this might displace some elements of the in-game UI. <br /></td></tr>
+<tr class="separator:a9d5ba3570e25b687e6df86a39a276eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4c5e5a52b7ac536f5cb80eb71b7c303a" id="r_a4c5e5a52b7ac536f5cb80eb71b7c303a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c5e5a52b7ac536f5cb80eb71b7c303a">promptPlayerCount</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
-<tr class="memdesc:a4c5e5a52b7ac536f5cb80eb71b7c303a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user for the total amount of all players.  <br /></td></tr>
-<tr class="separator:a4c5e5a52b7ac536f5cb80eb71b7c303a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4350472ae3a23f692728ac7c907690d5" id="r_a4350472ae3a23f692728ac7c907690d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4350472ae3a23f692728ac7c907690d5">promptAIPlayersCount</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
 <tr class="memdesc:a4350472ae3a23f692728ac7c907690d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user for how many of the players will be AI controlled.  <br /></td></tr>
 <tr class="separator:a4350472ae3a23f692728ac7c907690d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ee1b0968b64ea6faf9ddce3c4fbb497" id="r_a6ee1b0968b64ea6faf9ddce3c4fbb497"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ee1b0968b64ea6faf9ddce3c4fbb497">promptBigBlind</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:a6ee1b0968b64ea6faf9ddce3c4fbb497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user to set the big blind amount. This also sets the small amount to be the half of the entered amount.  <br /></td></tr>
+<tr class="separator:a6ee1b0968b64ea6faf9ddce3c4fbb497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3c3cf40325cc3dbdae770caf13074ab" id="r_af3c3cf40325cc3dbdae770caf13074ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af3c3cf40325cc3dbdae770caf13074ab">promptFundsPerPlayer</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
 <tr class="memdesc:af3c3cf40325cc3dbdae770caf13074ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user for the initial funds per player.  <br /></td></tr>
 <tr class="separator:af3c3cf40325cc3dbdae770caf13074ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada2fe6289006e47334890f8982ec452c" id="r_ada2fe6289006e47334890f8982ec452c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ada2fe6289006e47334890f8982ec452c">promptLimitFixed</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
 <tr class="memdesc:ada2fe6289006e47334890f8982ec452c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user to make the game fixed-limit or no-limit.  <br /></td></tr>
 <tr class="separator:ada2fe6289006e47334890f8982ec452c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee1b0968b64ea6faf9ddce3c4fbb497" id="r_a6ee1b0968b64ea6faf9ddce3c4fbb497"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6ee1b0968b64ea6faf9ddce3c4fbb497">promptBigBlind</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
-<tr class="memdesc:a6ee1b0968b64ea6faf9ddce3c4fbb497"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user to set the big blind amount. This also sets the small amount.  <br /></td></tr>
-<tr class="separator:a6ee1b0968b64ea6faf9ddce3c4fbb497"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a26f3259fc7236cf28b2a00d240c8ea2a" id="r_a26f3259fc7236cf28b2a00d240c8ea2a"><td class="memItemLeft" align="right" valign="top"><a id="a26f3259fc7236cf28b2a00d240c8ea2a" name="a26f3259fc7236cf28b2a00d240c8ea2a"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>MIN_FUNDS_PER_PLAYER</b></td></tr>
-<tr class="separator:a26f3259fc7236cf28b2a00d240c8ea2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59428ef3d190c9fbb6e63a2515dc6f50" id="r_a59428ef3d190c9fbb6e63a2515dc6f50"><td class="memItemLeft" align="right" valign="top"><a id="a59428ef3d190c9fbb6e63a2515dc6f50" name="a59428ef3d190c9fbb6e63a2515dc6f50"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_FUNDS_PER_PLAYER</b></td></tr>
-<tr class="separator:a59428ef3d190c9fbb6e63a2515dc6f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c5e5a52b7ac536f5cb80eb71b7c303a" id="r_a4c5e5a52b7ac536f5cb80eb71b7c303a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4c5e5a52b7ac536f5cb80eb71b7c303a">promptPlayerCount</a> (<a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:a4c5e5a52b7ac536f5cb80eb71b7c303a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prompts the user for the total amount of all players.  <br /></td></tr>
+<tr class="separator:a4c5e5a52b7ac536f5cb80eb71b7c303a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains the <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> struct and functions related to its initialization through console prompts. </p>
@@ -182,7 +200,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_FUNDS_PER_PL
       </table>
 </div><div class="memdoc">
 
-<p>Prompts the user to set the big blind amount. This also sets the small amount. </p>
+<p>Prompts the user to set the big blind amount. This also sets the small amount to be the half of the entered amount. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">grs</td><td>The <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> struct to modify. </td></tr>
@@ -274,7 +292,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_FUNDS_PER_PL
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="gamerules_8h.html">gamerules.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

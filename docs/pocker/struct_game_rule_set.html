@@ -105,14 +105,13 @@ $(function(){initNavTree('struct_game_rule_set.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a7fae6927f432f4ce8d957c7fa803effc" id="r_a7fae6927f432f4ce8d957c7fa803effc"><td class="memItemLeft" align="right" valign="top"><a id="a7fae6927f432f4ce8d957c7fa803effc" name="a7fae6927f432f4ce8d957c7fa803effc"></a>
-<a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>player_count</b></td></tr>
-<tr class="memdesc:a7fae6927f432f4ce8d957c7fa803effc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of all players, AI and humans included. <br /></td></tr>
-<tr class="separator:a7fae6927f432f4ce8d957c7fa803effc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a327add3e16c3e07fd5336da9b96c8e06" id="r_a327add3e16c3e07fd5336da9b96c8e06"><td class="memItemLeft" align="right" valign="top"><a id="a327add3e16c3e07fd5336da9b96c8e06" name="a327add3e16c3e07fd5336da9b96c8e06"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>ai_player_count</b></td></tr>
 <tr class="memdesc:a327add3e16c3e07fd5336da9b96c8e06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of players that are controlled by AI. The rest is controlled through human prompts. <br /></td></tr>
 <tr class="separator:a327add3e16c3e07fd5336da9b96c8e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6eabd814089c1036ba945c0bfc1ee1f" id="r_aa6eabd814089c1036ba945c0bfc1ee1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6eabd814089c1036ba945c0bfc1ee1f">big_blind</a></td></tr>
+<tr class="memdesc:aa6eabd814089c1036ba945c0bfc1ee1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Big blind bet amount.  <br /></td></tr>
+<tr class="separator:aa6eabd814089c1036ba945c0bfc1ee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a447ac2ca28f919fea0fabd24d6f7a288" id="r_a447ac2ca28f919fea0fabd24d6f7a288"><td class="memItemLeft" align="right" valign="top"><a id="a447ac2ca28f919fea0fabd24d6f7a288" name="a447ac2ca28f919fea0fabd24d6f7a288"></a>
 <a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>funds_per_player</b></td></tr>
 <tr class="memdesc:a447ac2ca28f919fea0fabd24d6f7a288"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of funds each <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> will start out with. <br /></td></tr>
@@ -120,9 +119,10 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ai_player_count</b></t
 <tr class="memitem:ad8340cb9a0f6bf6563707d4867b1f57c" id="r_ad8340cb9a0f6bf6563707d4867b1f57c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8340cb9a0f6bf6563707d4867b1f57c">limit_fixed</a></td></tr>
 <tr class="memdesc:ad8340cb9a0f6bf6563707d4867b1f57c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not the bets will be fixed.  <br /></td></tr>
 <tr class="separator:ad8340cb9a0f6bf6563707d4867b1f57c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6eabd814089c1036ba945c0bfc1ee1f" id="r_aa6eabd814089c1036ba945c0bfc1ee1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">int</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6eabd814089c1036ba945c0bfc1ee1f">big_blind</a></td></tr>
-<tr class="memdesc:aa6eabd814089c1036ba945c0bfc1ee1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Big blind bet amount.  <br /></td></tr>
-<tr class="separator:aa6eabd814089c1036ba945c0bfc1ee1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fae6927f432f4ce8d957c7fa803effc" id="r_a7fae6927f432f4ce8d957c7fa803effc"><td class="memItemLeft" align="right" valign="top"><a id="a7fae6927f432f4ce8d957c7fa803effc" name="a7fae6927f432f4ce8d957c7fa803effc"></a>
+<a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>player_count</b></td></tr>
+<tr class="memdesc:a7fae6927f432f4ce8d957c7fa803effc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of all players, AI and humans included. <br /></td></tr>
+<tr class="separator:a7fae6927f432f4ce8d957c7fa803effc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4077cb3b481be06cf7d3d62b6a4d1ed9" id="r_a4077cb3b481be06cf7d3d62b6a4d1ed9"><td class="memItemLeft" align="right" valign="top"><a id="a4077cb3b481be06cf7d3d62b6a4d1ed9" name="a4077cb3b481be06cf7d3d62b6a4d1ed9"></a>
 <a class="el" href="#a327add3e16c3e07fd5336da9b96c8e06">int</a>&#160;</td><td class="memItemRight" valign="bottom"><b>small_blind</b></td></tr>
 <tr class="memdesc:a4077cb3b481be06cf7d3d62b6a4d1ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small blind bet amount. It's automatically set to be big blind divided by two and rounded down. <br /></td></tr>
@@ -175,7 +175,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>ai_player_count</b></t
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_game_rule_set.html">GameRuleSet</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

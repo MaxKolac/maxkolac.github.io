@@ -1,10 +1,19 @@
 var searchData=
 [
-  ['promptaiplayerscount_0',['promptAIPlayersCount',['../gamerules_8h.html#a4350472ae3a23f692728ac7c907690d5',1,'gamerules.c']]],
-  ['promptbigblind_1',['promptBigBlind',['../gamerules_8h.html#a6ee1b0968b64ea6faf9ddce3c4fbb497',1,'gamerules.c']]],
-  ['promptbool_2',['promptBool',['../io_8h.html#a9e2e39446d448eefb5b9e4a3b46b4bfd',1,'io.c']]],
-  ['promptfundsperplayer_3',['promptFundsPerPlayer',['../gamerules_8h.html#af3c3cf40325cc3dbdae770caf13074ab',1,'gamerules.c']]],
-  ['promptint_4',['promptInt',['../io_8h.html#a8c57112fb00653c7b81d918e0eaa6777',1,'io.c']]],
-  ['promptlimitfixed_5',['promptLimitFixed',['../gamerules_8h.html#ada2fe6289006e47334890f8982ec452c',1,'gamerules.c']]],
-  ['promptplayercount_6',['promptPlayerCount',['../gamerules_8h.html#a4c5e5a52b7ac536f5cb80eb71b7c303a',1,'gamerules.c']]]
+  ['playercreatenew_0',['playerCreateNew',['../player_8h.html#a1c94e99e2adfffbd43790d207bf0d826',1,'player.c']]],
+  ['playercreatenewwithfunds_1',['playerCreateNewWithFunds',['../player_8h.html#a67d6de1c3a5a11f607da98451f72e8e3',1,'player.c']]],
+  ['printcards_2',['printCards',['../playerio_8h.html#a8306ac45eb6e9f499f1188b47e0c58de',1,'playerio.c']]],
+  ['printheader_3',['printHeader',['../playerio_8h.html#ad73ce434f8aba7dfbab500a60c128306',1,'playerio.c']]],
+  ['printplayers_4',['printPlayers',['../playerio_8h.html#afe2c39b6b901e412e5b007334a7562aa',1,'playerio.c']]],
+  ['printraisespotbet_5',['printRaisesPotBet',['../playerio_8h.html#a2820e68c73b67abe1bb859053990d561',1,'playerio.c']]],
+  ['printshowdownresults_6',['printShowdownResults',['../playerio_8h.html#a9626f1a23155acac40327807fcdd7716',1,'playerio.c']]],
+  ['printtitlescreen_7',['printTitleScreen',['../playerio_8h.html#a120f8e5c22a3349523645541cad2d0e6',1,'playerio.c']]],
+  ['promptaiplayerscount_8',['promptAIPlayersCount',['../gamerules_8h.html#a4350472ae3a23f692728ac7c907690d5',1,'gamerules.c']]],
+  ['promptbigblind_9',['promptBigBlind',['../gamerules_8h.html#a6ee1b0968b64ea6faf9ddce3c4fbb497',1,'gamerules.c']]],
+  ['promptbool_10',['promptBool',['../playerio_8h.html#a9e2e39446d448eefb5b9e4a3b46b4bfd',1,'playerio.c']]],
+  ['promptfundsperplayer_11',['promptFundsPerPlayer',['../gamerules_8h.html#af3c3cf40325cc3dbdae770caf13074ab',1,'gamerules.c']]],
+  ['promptint_12',['promptInt',['../playerio_8h.html#a8c57112fb00653c7b81d918e0eaa6777',1,'playerio.c']]],
+  ['promptlimitfixed_13',['promptLimitFixed',['../gamerules_8h.html#ada2fe6289006e47334890f8982ec452c',1,'gamerules.c']]],
+  ['promptnull_14',['promptNull',['../playerio_8h.html#a56ee4da05979fe0f7c49fe6615bcfc93',1,'playerio.c']]],
+  ['promptplayercount_15',['promptPlayerCount',['../gamerules_8h.html#a4c5e5a52b7ac536f5cb80eb71b7c303a',1,'gamerules.c']]]
 ];

@@ -105,34 +105,63 @@ $(function(){initNavTree('struct_player.html',''); initResizable(); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a38a3243cd8b99085446d1b235cce825c" id="r_a38a3243cd8b99085446d1b235cce825c"><td class="memItemLeft" align="right" valign="top"><a id="a38a3243cd8b99085446d1b235cce825c" name="a38a3243cd8b99085446d1b235cce825c"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>funds</b></td></tr>
-<tr class="memdesc:a38a3243cd8b99085446d1b235cce825c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s current amount of funds. If this number reaches 0, the player looses. <br /></td></tr>
-<tr class="separator:a38a3243cd8b99085446d1b235cce825c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8a81b97a9cf63791135f49cb277ef2d" id="r_ac8a81b97a9cf63791135f49cb277ef2d"><td class="memItemLeft" align="right" valign="top"><a id="ac8a81b97a9cf63791135f49cb277ef2d" name="ac8a81b97a9cf63791135f49cb277ef2d"></a>
+<a class="el" href="struct_playing_card.html">PlayingCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>current_hand</b> [<a class="el" href="playingcard_8h.html#aaa4f5c367c62f3188210c95da4892e9a">CARDS_PER_PLAYER</a>]</td></tr>
+<tr class="memdesc:ac8a81b97a9cf63791135f49cb277ef2d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s hole cards. <br /></td></tr>
+<tr class="separator:ac8a81b97a9cf63791135f49cb277ef2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa4107320975361c0063dd775dcf6f87" id="r_afa4107320975361c0063dd775dcf6f87"><td class="memItemLeft" align="right" valign="top"><a id="afa4107320975361c0063dd775dcf6f87" name="afa4107320975361c0063dd775dcf6f87"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>folded</b></td></tr>
 <tr class="memdesc:afa4107320975361c0063dd775dcf6f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if this player has already folded their cards in the current round. <br /></td></tr>
 <tr class="separator:afa4107320975361c0063dd775dcf6f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38a3243cd8b99085446d1b235cce825c" id="r_a38a3243cd8b99085446d1b235cce825c"><td class="memItemLeft" align="right" valign="top"><a id="a38a3243cd8b99085446d1b235cce825c" name="a38a3243cd8b99085446d1b235cce825c"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>funds</b></td></tr>
+<tr class="memdesc:a38a3243cd8b99085446d1b235cce825c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s current amount of funds. If this number reaches 0, the player looses. <br /></td></tr>
+<tr class="separator:a38a3243cd8b99085446d1b235cce825c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad52d0cef77e6b9d1329c07c9467874" id="r_a7ad52d0cef77e6b9d1329c07c9467874"><td class="memItemLeft" align="right" valign="top"><a id="a7ad52d0cef77e6b9d1329c07c9467874" name="a7ad52d0cef77e6b9d1329c07c9467874"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHuman</b></td></tr>
+<tr class="memdesc:a7ad52d0cef77e6b9d1329c07c9467874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> is controlled through AI or by human. <br /></td></tr>
+<tr class="separator:a7ad52d0cef77e6b9d1329c07c9467874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54e54433f368b909ab716c6bea6ec5df" id="r_a54e54433f368b909ab716c6bea6ec5df"><td class="memItemLeft" align="right" valign="top"><a id="a54e54433f368b909ab716c6bea6ec5df" name="a54e54433f368b909ab716c6bea6ec5df"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>past_decisions</b> [<a class="el" href="gamerules_8h.html#a24136eebb371603915f6cdcbc962bf0b">MAX_ROUNDS_PER_GAME</a> *(<a class="el" href="gamerules_8h.html#a45ff720125886fcd0c2b18c13759ce51">MAX_BETS_PER_ROUND</a>+1)]</td></tr>
+<tr class="memdesc:a54e54433f368b909ab716c6bea6ec5df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains a log of this <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s past decision in the current game. <br /></td></tr>
+<tr class="separator:a54e54433f368b909ab716c6bea6ec5df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42883f000b3b42842d43377e09a586fe" id="r_a42883f000b3b42842d43377e09a586fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a42883f000b3b42842d43377e09a586fe">past_decisions_size</a></td></tr>
+<tr class="memdesc:a42883f000b3b42842d43377e09a586fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current size of the past_decisions array.  <br /></td></tr>
+<tr class="separator:a42883f000b3b42842d43377e09a586fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7fc1d833836bd31d6c6342666d83922" id="r_ac7fc1d833836bd31d6c6342666d83922"><td class="memItemLeft" align="right" valign="top"><a id="ac7fc1d833836bd31d6c6342666d83922" name="ac7fc1d833836bd31d6c6342666d83922"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>scores</b> [<a class="el" href="player_8h.html#ac9dd10c653895d3ce47d315874c91454">SCORE_TABLE_SIZE</a>]</td></tr>
+<tr class="memdesc:ac7fc1d833836bd31d6c6342666d83922"><td class="mdescLeft">&#160;</td><td class="mdescRight">A score table for individual hand ranks to help break up ties. See handranking.c for more info. <br /></td></tr>
+<tr class="separator:ac7fc1d833836bd31d6c6342666d83922"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac269421edaa9bbce67a94581a148889d" id="r_ac269421edaa9bbce67a94581a148889d"><td class="memItemLeft" align="right" valign="top"><a id="ac269421edaa9bbce67a94581a148889d" name="ac269421edaa9bbce67a94581a148889d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>tappedout</b></td></tr>
 <tr class="memdesc:ac269421edaa9bbce67a94581a148889d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells if this player has tapped out in the current round. <br /></td></tr>
 <tr class="separator:ac269421edaa9bbce67a94581a148889d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa63202965c4304f112a8d3bae18227e5" id="r_aa63202965c4304f112a8d3bae18227e5"><td class="memItemLeft" align="right" valign="top"><a id="aa63202965c4304f112a8d3bae18227e5" name="aa63202965c4304f112a8d3bae18227e5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>scores</b> [10]</td></tr>
-<tr class="memdesc:aa63202965c4304f112a8d3bae18227e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A score table for individual hand ranks to help break up ties. See handranking.c for more info. <br /></td></tr>
-<tr class="separator:aa63202965c4304f112a8d3bae18227e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8a81b97a9cf63791135f49cb277ef2d" id="r_ac8a81b97a9cf63791135f49cb277ef2d"><td class="memItemLeft" align="right" valign="top"><a id="ac8a81b97a9cf63791135f49cb277ef2d" name="ac8a81b97a9cf63791135f49cb277ef2d"></a>
-<a class="el" href="struct_playing_card.html">PlayingCard</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>current_hand</b> [CARDS_PER_PLAYER]</td></tr>
-<tr class="memdesc:ac8a81b97a9cf63791135f49cb277ef2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointers to player's playing cards in his hand. <br /></td></tr>
-<tr class="separator:ac8a81b97a9cf63791135f49cb277ef2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ad52d0cef77e6b9d1329c07c9467874" id="r_a7ad52d0cef77e6b9d1329c07c9467874"><td class="memItemLeft" align="right" valign="top"><a id="a7ad52d0cef77e6b9d1329c07c9467874" name="a7ad52d0cef77e6b9d1329c07c9467874"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHuman</b></td></tr>
-<tr class="memdesc:a7ad52d0cef77e6b9d1329c07c9467874"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether or not this player is controlled through AI or by human. <br /></td></tr>
-<tr class="separator:a7ad52d0cef77e6b9d1329c07c9467874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90b6232ac7e8b5bb36721dd2a1d5ca00" id="r_a90b6232ac7e8b5bb36721dd2a1d5ca00"><td class="memItemLeft" align="right" valign="top"><a id="a90b6232ac7e8b5bb36721dd2a1d5ca00" name="a90b6232ac7e8b5bb36721dd2a1d5ca00"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>tappedout_funds</b></td></tr>
+<tr class="memdesc:a90b6232ac7e8b5bb36721dd2a1d5ca00"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of funds the pot held at the time of this <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> tappingout. If they win the showdown, this <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> will receive only this much. <br /></td></tr>
+<tr class="separator:a90b6232ac7e8b5bb36721dd2a1d5ca00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a single player. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="a42883f000b3b42842d43377e09a586fe" name="a42883f000b3b42842d43377e09a586fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42883f000b3b42842d43377e09a586fe">&#9670;&#160;</a></span>past_decisions_size</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Player::past_decisions_size</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Current size of the past_decisions array. </p>
+<p>The greatest value of this variable would be a scenario where a <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> checks, and then calls all subsequent MAX_BETS_PER_ROUND raises, on every betting round. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li><a class="el" href="player_8h_source.html">player.h</a></li>
 </ul>
 </div><!-- contents -->
@@ -141,7 +170,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isHuman</b></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="struct_player.html">Player</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

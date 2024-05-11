@@ -104,14 +104,17 @@ $(function(){initNavTree('utils_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#a59557109bb2901006611be599f7bfff2">mathClamp</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#aa15c14b342eccdff229bd9870928d93f">randRange</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#a2f3baf37cae0de7a3cae526011706642">mathMax</a>(<span class="keywordtype">int</span>, ...);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#a0e7579d18c420dddf267f1e379d34612">mathMin</a>(<span class="keywordtype">int</span>, ...);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="utils_8h.html#afa99ec4acc4ecb2dc3c2d05da15d0e3f">   12</a></span><span class="preprocessor">#define MAX(a,b) (a &gt; b ? a : b)</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="utils_8h.html#a3acffbd305ee72dcd4593c0d8af64a4f">   14</a></span><span class="preprocessor">#define MIN(a,b) (a &lt; b ? a : b)</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#endif  </span><span class="comment">//UTILS_H</span></div>
-<div class="ttc" id="autils_8h_html_a0e7579d18c420dddf267f1e379d34612"><div class="ttname"><a href="utils_8h.html#a0e7579d18c420dddf267f1e379d34612">mathMin</a></div><div class="ttdeci">int mathMin(int,...)</div><div class="ttdoc">Returns the smallest integer provided in arguments.</div><div class="ttdef"><b>Definition</b> utils.c:71</div></div>
-<div class="ttc" id="autils_8h_html_a2f3baf37cae0de7a3cae526011706642"><div class="ttname"><a href="utils_8h.html#a2f3baf37cae0de7a3cae526011706642">mathMax</a></div><div class="ttdeci">int mathMax(int,...)</div><div class="ttdoc">Returns the greatest integer provided in arguments.</div><div class="ttdef"><b>Definition</b> utils.c:45</div></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#a59557109bb2901006611be599f7bfff2">mathClamp</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#aa15c14b342eccdff229bd9870928d93f">randRange</a>(<span class="keywordtype">int</span>, <span class="keywordtype">int</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#a2f3baf37cae0de7a3cae526011706642">mathMax</a>(<span class="keywordtype">int</span>, ...);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">int</span> <a class="code hl_function" href="utils_8h.html#a0e7579d18c420dddf267f1e379d34612">mathMin</a>(<span class="keywordtype">int</span>, ...);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#endif  </span><span class="comment">//UTILS_H</span></div>
+<div class="ttc" id="autils_8h_html_a0e7579d18c420dddf267f1e379d34612"><div class="ttname"><a href="utils_8h.html#a0e7579d18c420dddf267f1e379d34612">mathMin</a></div><div class="ttdeci">int mathMin(int,...)</div><div class="ttdoc">Returns the smallest integer provided in arguments.</div><div class="ttdef"><b>Definition</b> utils.c:75</div></div>
+<div class="ttc" id="autils_8h_html_a2f3baf37cae0de7a3cae526011706642"><div class="ttname"><a href="utils_8h.html#a2f3baf37cae0de7a3cae526011706642">mathMax</a></div><div class="ttdeci">int mathMax(int,...)</div><div class="ttdoc">Returns the greatest integer provided in arguments.</div><div class="ttdef"><b>Definition</b> utils.c:47</div></div>
 <div class="ttc" id="autils_8h_html_a59557109bb2901006611be599f7bfff2"><div class="ttname"><a href="utils_8h.html#a59557109bb2901006611be599f7bfff2">mathClamp</a></div><div class="ttdeci">int mathClamp(int, int, int)</div><div class="ttdoc">Clamps a value to be constrained in a range.</div><div class="ttdef"><b>Definition</b> utils.c:17</div></div>
 <div class="ttc" id="autils_8h_html_aa15c14b342eccdff229bd9870928d93f"><div class="ttname"><a href="utils_8h.html#aa15c14b342eccdff229bd9870928d93f">randRange</a></div><div class="ttdeci">int randRange(int, int)</div><div class="ttdoc">Randomizes an integer from a given inclusive range.</div><div class="ttdef"><b>Definition</b> utils.c:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -120,7 +123,7 @@ $(function(){initNavTree('utils_8h_source.html',''); initResizable(); });
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['s_5fblind_5fplayer_0',['s_blind_player',['../struct_game_state.html#a0bf451d9fa062a533a8b9f9ec7667adc',1,'GameState']]],
-  ['scores_1',['scores',['../struct_player.html#aa63202965c4304f112a8d3bae18227e5',1,'Player']]],
-  ['small_5fblind_2',['small_blind',['../struct_game_rule_set.html#a4077cb3b481be06cf7d3d62b6a4d1ed9',1,'GameRuleSet']]],
-  ['suit_3',['suit',['../struct_playing_card.html#a5ce8cc46ab4e715bc4780ed9251559ba',1,'PlayingCard']]]
+  ['message_0',['message',['../struct_message.html#a49d0421b856d61670f3983cef97874b1',1,'Message']]]
 ];

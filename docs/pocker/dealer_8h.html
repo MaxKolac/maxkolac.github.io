@@ -103,28 +103,24 @@ $(function(){initNavTree('dealer_8h.html',''); initResizable(); });
 <code>#include &quot;<a class="el" href="gamerules_8h_source.html">gamerules.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gamestate_8h_source.html">gamestate.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
-<code>#include &quot;playingcard_enums.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="playingcard_8h_source.html">playingcard.h</a>&quot;</code><br />
 </div>
 <p><a href="dealer_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a840d6009bd27da08f9d781274de1a3c5" id="r_a840d6009bd27da08f9d781274de1a3c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a840d6009bd27da08f9d781274de1a3c5">distributeCards</a> (<a class="el" href="struct_playing_card.html">PlayingCard</a>[], <a class="el" href="struct_player.html">Player</a>[], <a class="el" href="struct_playing_card.html">PlayingCard</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
-<tr class="memdesc:a840d6009bd27da08f9d781274de1a3c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distributes random playing cards to players' hands and selects community cards.  <br /></td></tr>
-<tr class="separator:a840d6009bd27da08f9d781274de1a3c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a372289b4e966a68eb1cbd864791521c7" id="r_a372289b4e966a68eb1cbd864791521c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a372289b4e966a68eb1cbd864791521c7">buildDeck</a> (<a class="el" href="struct_playing_card.html">PlayingCard</a>[], bool)</td></tr>
 <tr class="memdesc:a372289b4e966a68eb1cbd864791521c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds a deck of playing cards containing 4 suits &amp; 13 cards for each suit.  <br /></td></tr>
 <tr class="separator:a372289b4e966a68eb1cbd864791521c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646f656ae3b7d728a14d3fd9ccd287bf" id="r_a646f656ae3b7d728a14d3fd9ccd287bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a646f656ae3b7d728a14d3fd9ccd287bf">decideWinners</a> (<a class="el" href="struct_player.html">Player</a> *[], int, int *)</td></tr>
+<tr class="memdesc:a646f656ae3b7d728a14d3fd9ccd287bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the scores of all players on the same tier (scores array index). Populates the winners array with player indexes who function deemed as winners.  <br /></td></tr>
+<tr class="separator:a646f656ae3b7d728a14d3fd9ccd287bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2bb7dfec8fd84f98967362c46f3dc1ea" id="r_a2bb7dfec8fd84f98967362c46f3dc1ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2bb7dfec8fd84f98967362c46f3dc1ea">distributeCards</a> (<a class="el" href="struct_playing_card.html">PlayingCard</a>[], <a class="el" href="struct_player.html">Player</a> *[], <a class="el" href="struct_playing_card.html">PlayingCard</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:a2bb7dfec8fd84f98967362c46f3dc1ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Distributes random playing cards to players' hands and selects community cards.  <br /></td></tr>
+<tr class="separator:a2bb7dfec8fd84f98967362c46f3dc1ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99704224779fe7ecc185dc90b507d08b" id="r_a99704224779fe7ecc185dc90b507d08b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a99704224779fe7ecc185dc90b507d08b">scorePlayersHand</a> (<a class="el" href="struct_player.html">Player</a> *, const <a class="el" href="struct_playing_card.html">PlayingCard</a> *[], int)</td></tr>
-<tr class="memdesc:a99704224779fe7ecc185dc90b507d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyzes <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s hand using functions inside handranking.c and saves scores in <a class="el" href="struct_player.html#aa63202965c4304f112a8d3bae18227e5" title="A score table for individual hand ranks to help break up ties. See handranking.c for more info.">Player.scores</a> array.  <br /></td></tr>
+<tr class="memdesc:a99704224779fe7ecc185dc90b507d08b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyzes <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s hand using functions inside handranking.c and saves scores in <a class="el" href="struct_player.html#ac7fc1d833836bd31d6c6342666d83922" title="A score table for individual hand ranks to help break up ties. See handranking.c for more info.">Player.scores</a> array.  <br /></td></tr>
 <tr class="separator:a99704224779fe7ecc185dc90b507d08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a6c32bb00bdf3ad0d1b4cafc59ec39f" id="r_a3a6c32bb00bdf3ad0d1b4cafc59ec39f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3a6c32bb00bdf3ad0d1b4cafc59ec39f">decideWinners</a> (<a class="el" href="struct_player.html">Player</a>[], int, int *)</td></tr>
-<tr class="memdesc:a3a6c32bb00bdf3ad0d1b4cafc59ec39f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the scores of all players on the same tier (scores array index). Populates the winners array with player indexes who function deemed as winners.  <br /></td></tr>
-<tr class="separator:a3a6c32bb00bdf3ad0d1b4cafc59ec39f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c93cff1cadd750f945d4b58d499a452" id="r_a7c93cff1cadd750f945d4b58d499a452"><td class="memItemLeft" align="right" valign="top"><a id="a7c93cff1cadd750f945d4b58d499a452" name="a7c93cff1cadd750f945d4b58d499a452"></a>
-unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailableDecisions</b> (const <a class="el" href="struct_player.html">Player</a> *, const <a class="el" href="struct_game_state.html">GameState</a> *, const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
-<tr class="separator:a7c93cff1cadd750f945d4b58d499a452"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains function-equivalents of what a real-life table dealer would do in a real poker game. </p>
@@ -159,8 +155,8 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
 
 </div>
 </div>
-<a id="a3a6c32bb00bdf3ad0d1b4cafc59ec39f" name="a3a6c32bb00bdf3ad0d1b4cafc59ec39f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a6c32bb00bdf3ad0d1b4cafc59ec39f">&#9670;&#160;</a></span>decideWinners()</h2>
+<a id="a646f656ae3b7d728a14d3fd9ccd287bf" name="a646f656ae3b7d728a14d3fd9ccd287bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646f656ae3b7d728a14d3fd9ccd287bf">&#9670;&#160;</a></span>decideWinners()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,7 +164,7 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
         <tr>
           <td class="memname">int decideWinners </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_player.html">Player</a></td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -186,7 +182,7 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
 <p>Compares the scores of all players on the same tier (scores array index). Populates the winners array with player indexes who function deemed as winners. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">players</td><td>The Players array to compare score-wise. </td></tr>
+    <tr><td class="paramname">players</td><td>The Players who will be compared with each other score-wise. </td></tr>
     <tr><td class="paramname">players_count</td><td>The length of players array. </td></tr>
     <tr><td class="paramname">winners</td><td>An array which the function will populate with player indexes who are to be awarded the pot or part of it. </td></tr>
   </table>
@@ -196,8 +192,8 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
 
 </div>
 </div>
-<a id="a840d6009bd27da08f9d781274de1a3c5" name="a840d6009bd27da08f9d781274de1a3c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a840d6009bd27da08f9d781274de1a3c5">&#9670;&#160;</a></span>distributeCards()</h2>
+<a id="a2bb7dfec8fd84f98967362c46f3dc1ea" name="a2bb7dfec8fd84f98967362c46f3dc1ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2bb7dfec8fd84f98967362c46f3dc1ea">&#9670;&#160;</a></span>distributeCards()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -210,7 +206,7 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_player.html">Player</a></td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -228,9 +224,10 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
 <p>Distributes random playing cards to players' hands and selects community cards. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">deck</td><td>An array of previously generated playing cards. </td></tr>
-    <tr><td class="paramname">player_hands</td><td>Array of pointers which will be populated with addresses to deck's elements. </td></tr>
-    <tr><td class="paramname">comm_cards</td><td>Array of pointers which will be populated with addresses to deck's elements.</td></tr>
+    <tr><td class="paramname">deck</td><td>An array of previously generated <a class="el" href="struct_playing_card.html" title="Represents a single playing card.">PlayingCard</a> structs. </td></tr>
+    <tr><td class="paramname">players</td><td>Array of Players who will be dealt hole cards. </td></tr>
+    <tr><td class="paramname">comm_cards</td><td>Array of PlayingCards which will be community cards. </td></tr>
+    <tr><td class="paramname">rules</td><td><a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> struct containing amount of Players.</td></tr>
   </table>
   </dd>
 </dl>
@@ -262,7 +259,7 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
       </table>
 </div><div class="memdoc">
 
-<p>Analyzes <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s hand using functions inside handranking.c and saves scores in <a class="el" href="struct_player.html#aa63202965c4304f112a8d3bae18227e5" title="A score table for individual hand ranks to help break up ties. See handranking.c for more info.">Player.scores</a> array. </p>
+<p>Analyzes <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>'s hand using functions inside handranking.c and saves scores in <a class="el" href="struct_player.html#ac7fc1d833836bd31d6c6342666d83922" title="A score table for individual hand ranks to help break up ties. See handranking.c for more info.">Player.scores</a> array. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">_player</td><td>The player whose hand will be scored. </td></tr>
@@ -280,7 +277,7 @@ unsigned char&#160;</td><td class="memItemRight" valign="bottom"><b>checkAvailab
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dealer_8h.html">dealer.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

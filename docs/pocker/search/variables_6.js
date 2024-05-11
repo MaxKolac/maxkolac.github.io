@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['limit_5ffixed_0',['limit_fixed',['../struct_game_rule_set.html#ad8340cb9a0f6bf6563707d4867b1f57c',1,'GameRuleSet']]]
+  ['ishuman_0',['isHuman',['../struct_player.html#a7ad52d0cef77e6b9d1329c07c9467874',1,'Player']]]
 ];

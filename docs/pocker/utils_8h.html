@@ -92,6 +92,7 @@ $(function(){initNavTree('utils_8h.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">utils.h File Reference</div></div>
 </div><!--header-->
@@ -103,6 +104,17 @@ $(function(){initNavTree('utils_8h.html',''); initResizable(); });
 </div>
 <p><a href="utils_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:afa99ec4acc4ecb2dc3c2d05da15d0e3f" id="r_afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memItemLeft" align="right" valign="top"><a id="afa99ec4acc4ecb2dc3c2d05da15d0e3f" name="afa99ec4acc4ecb2dc3c2d05da15d0e3f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX</b>(a,  b)&#160;&#160;&#160;(a &gt; b ? a : b)</td></tr>
+<tr class="memdesc:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick generic macro for getting the larger number. <br /></td></tr>
+<tr class="separator:afa99ec4acc4ecb2dc3c2d05da15d0e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3acffbd305ee72dcd4593c0d8af64a4f" id="r_a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memItemLeft" align="right" valign="top"><a id="a3acffbd305ee72dcd4593c0d8af64a4f" name="a3acffbd305ee72dcd4593c0d8af64a4f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>MIN</b>(a,  b)&#160;&#160;&#160;(a &lt; b ? a : b)</td></tr>
+<tr class="memdesc:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Quick generic macro for getting the smaller number. <br /></td></tr>
+<tr class="separator:a3acffbd305ee72dcd4593c0d8af64a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a59557109bb2901006611be599f7bfff2" id="r_a59557109bb2901006611be599f7bfff2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59557109bb2901006611be599f7bfff2">mathClamp</a> (int, int, int)</td></tr>
@@ -185,6 +197,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function is redundant because <a class="el" href="#afa99ec4acc4ecb2dc3c2d05da15d0e3f" title="Quick generic macro for getting the larger number.">MAX(a,b)</a> exists, but I'm keeping it in case I ever need an example of a function with variadic arguments. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The largest of the provided integers, excluding the count parameter. </dd></dl>
 
 </div>
 </div>
@@ -215,6 +229,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section warning"><dt>Warning</dt><dd>This function is redundant because <a class="el" href="#a3acffbd305ee72dcd4593c0d8af64a4f" title="Quick generic macro for getting the smaller number.">MIN(a,b)</a> exists, but I'm keeping it in case I ever need an example of a function with variadic arguments. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The smallest of the provided integers, excluding the count parameter. </dd></dl>
 
 </div>
 </div>
@@ -256,7 +272,7 @@ Functions</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="utils_8h.html">utils.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

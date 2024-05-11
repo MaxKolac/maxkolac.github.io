@@ -93,9 +93,7 @@ $(function(){initNavTree('gamestate_8h.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">gamestate.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -103,7 +101,6 @@ $(function(){initNavTree('gamestate_8h.html',''); initResizable(); });
 <p>Contains the logic of a poker game in a form of DI'able functions. See their arrangement and implementation in main.c.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="constants_8h_source.html">constants.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="gamerules_8h_source.html">gamerules.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="player_8h_source.html">player.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="playingcard_8h_source.html">playingcard.h</a>&quot;</code><br />
@@ -113,52 +110,44 @@ $(function(){initNavTree('gamestate_8h.html',''); initResizable(); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_game_state.html">GameState</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the current state of a poker game. Recommended to initialize this struct through gsCreateNew(), but hey I'm not your mom.  <a href="struct_game_state.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the current state of a poker game.  <a href="struct_game_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a45ff720125886fcd0c2b18c13759ce51" id="r_a45ff720125886fcd0c2b18c13759ce51"><td class="memItemLeft" align="right" valign="top"><a id="a45ff720125886fcd0c2b18c13759ce51" name="a45ff720125886fcd0c2b18c13759ce51"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BETS_PER_ROUND</b>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:a45ff720125886fcd0c2b18c13759ce51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a689a62e2ee5b6fd24604355e70911b02" id="r_a689a62e2ee5b6fd24604355e70911b02"><td class="memItemLeft" align="right" valign="top"><a id="a689a62e2ee5b6fd24604355e70911b02" name="a689a62e2ee5b6fd24604355e70911b02"></a>
-<a class="el" href="struct_game_state.html">GameState</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>gsCreateNew</b> (const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memitem:a689a62e2ee5b6fd24604355e70911b02" id="r_a689a62e2ee5b6fd24604355e70911b02"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_game_state.html">GameState</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a689a62e2ee5b6fd24604355e70911b02">gsCreateNew</a> (const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:a689a62e2ee5b6fd24604355e70911b02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new, clean and unconfigured <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct.  <br /></td></tr>
 <tr class="separator:a689a62e2ee5b6fd24604355e70911b02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27a62f231a19c81fe816657d634bdc43" id="r_a27a62f231a19c81fe816657d634bdc43"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a62f231a19c81fe816657d634bdc43">gsAdvancePlayerTurn</a> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], unsigned int[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *, const int *)</td></tr>
-<tr class="separator:a27a62f231a19c81fe816657d634bdc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4651c63c33c5bf6315e392787f0ad7e1" id="r_a4651c63c33c5bf6315e392787f0ad7e1"><td class="memItemLeft" align="right" valign="top"><a id="a4651c63c33c5bf6315e392787f0ad7e1" name="a4651c63c33c5bf6315e392787f0ad7e1"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gsSetUpBettingRound</b> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memitem:a4651c63c33c5bf6315e392787f0ad7e1" id="r_a4651c63c33c5bf6315e392787f0ad7e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4651c63c33c5bf6315e392787f0ad7e1">gsSetUpBettingRound</a> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:a4651c63c33c5bf6315e392787f0ad7e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the members of a <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct according to its current betting_round value.  <br /></td></tr>
 <tr class="separator:a4651c63c33c5bf6315e392787f0ad7e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accdcd19918c414859b389005dad91308" id="r_accdcd19918c414859b389005dad91308"><td class="memItemLeft" align="right" valign="top"><a id="accdcd19918c414859b389005dad91308" name="accdcd19918c414859b389005dad91308"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gsConcludeBettingRound</b> (<a class="el" href="struct_game_state.html">GameState</a> *)</td></tr>
+<tr class="memitem:a17ba2a5c24ccf837f0cc29f867d27a7d" id="r_a17ba2a5c24ccf837f0cc29f867d27a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17ba2a5c24ccf837f0cc29f867d27a7d">gsAdvancePlayerTurn</a> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *, const int *)</td></tr>
+<tr class="memdesc:a17ba2a5c24ccf837f0cc29f867d27a7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advances the player's turn by allowing them to take action and applying any changes causes by the chosen action.  <br /></td></tr>
+<tr class="separator:a17ba2a5c24ccf837f0cc29f867d27a7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdcd19918c414859b389005dad91308" id="r_accdcd19918c414859b389005dad91308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accdcd19918c414859b389005dad91308">gsConcludeBettingRound</a> (<a class="el" href="struct_game_state.html">GameState</a> *)</td></tr>
+<tr class="memdesc:accdcd19918c414859b389005dad91308"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the amount of revealed community cards and increments the betting_round value of the passed <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct.  <br /></td></tr>
 <tr class="separator:accdcd19918c414859b389005dad91308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b2f0c94fc52b43cf70e8b8065aef473" id="r_a9b2f0c94fc52b43cf70e8b8065aef473"><td class="memItemLeft" align="right" valign="top"><a id="a9b2f0c94fc52b43cf70e8b8065aef473" name="a9b2f0c94fc52b43cf70e8b8065aef473"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gsPerformShowdown</b> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], unsigned int[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *, const <a class="el" href="struct_playing_card.html">PlayingCard</a> *[])</td></tr>
-<tr class="memdesc:a9b2f0c94fc52b43cf70e8b8065aef473"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the winner(s) and pays them their winnings from the pot. If the win happened because of everyone else folding, only one player who did not fold is awarded the whole pot. Otherwise, everyone's hands are compared, winners are pulled and awarded their fair share. <br /></td></tr>
-<tr class="separator:a9b2f0c94fc52b43cf70e8b8065aef473"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a55b75e23e9be8cc39134441a6b0257ee" id="r_a55b75e23e9be8cc39134441a6b0257ee"><td class="memItemLeft" align="right" valign="top"><a id="a55b75e23e9be8cc39134441a6b0257ee" name="a55b75e23e9be8cc39134441a6b0257ee"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>gsCheckGameOverCondition</b> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
-<tr class="memdesc:a55b75e23e9be8cc39134441a6b0257ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if everyone but one player has any funds left. If the condition is true, this would indicate end of the game. This function also unmarks all Players with funds left. Broke players are marked as folded right away. <br /></td></tr>
-<tr class="separator:a55b75e23e9be8cc39134441a6b0257ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbb100397b3092339c468d9615cda361" id="r_acbb100397b3092339c468d9615cda361"><td class="memItemLeft" align="right" valign="top"><a id="acbb100397b3092339c468d9615cda361" name="acbb100397b3092339c468d9615cda361"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>gsPassDealerButton</b> (<a class="el" href="struct_game_state.html">GameState</a> *, const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
-<tr class="memdesc:acbb100397b3092339c468d9615cda361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the dealer button to the next player. Done once after each full round. This also causes the blind player status to move. <br /></td></tr>
+<tr class="memitem:a1f1533b766dc03948e712e7358c3ddee" id="r_a1f1533b766dc03948e712e7358c3ddee"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1f1533b766dc03948e712e7358c3ddee">gsDetermineWinners</a> (int[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *, const <a class="el" href="struct_game_state.html">GameState</a> *, const <a class="el" href="struct_player.html">Player</a> *[], const <a class="el" href="struct_playing_card.html">PlayingCard</a> *[])</td></tr>
+<tr class="memdesc:a1f1533b766dc03948e712e7358c3ddee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the winner(s) and populates the winners array with their indexes.  <br /></td></tr>
+<tr class="separator:a1f1533b766dc03948e712e7358c3ddee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0656f934c08b52fae4dd08cb8195b7bb" id="r_a0656f934c08b52fae4dd08cb8195b7bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0656f934c08b52fae4dd08cb8195b7bb">gsAwardPot</a> (<a class="el" href="struct_game_state.html">GameState</a> *, <a class="el" href="struct_player.html">Player</a> *[], const int[], const int)</td></tr>
+<tr class="memdesc:a0656f934c08b52fae4dd08cb8195b7bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the winner(s) and pays them their winnings from the pot.  <br /></td></tr>
+<tr class="separator:a0656f934c08b52fae4dd08cb8195b7bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01980ae59c7d960f8b41b03d1407cc1c" id="r_a01980ae59c7d960f8b41b03d1407cc1c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01980ae59c7d960f8b41b03d1407cc1c">gsCheckGameOverCondition</a> (<a class="el" href="struct_player.html">Player</a> *[], const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:a01980ae59c7d960f8b41b03d1407cc1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if everyone but one player has any funds left.  <br /></td></tr>
+<tr class="separator:a01980ae59c7d960f8b41b03d1407cc1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb100397b3092339c468d9615cda361" id="r_acbb100397b3092339c468d9615cda361"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbb100397b3092339c468d9615cda361">gsPassDealerButton</a> (<a class="el" href="struct_game_state.html">GameState</a> *, const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *)</td></tr>
+<tr class="memdesc:acbb100397b3092339c468d9615cda361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass the dealer button to the next player. Done once after each full round. This also causes the blind player statuses to move.  <br /></td></tr>
 <tr class="separator:acbb100397b3092339c468d9615cda361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a2dbb0d61fdd1a3889cf96fa7ac2ae4e2" id="r_a2dbb0d61fdd1a3889cf96fa7ac2ae4e2"><td class="memItemLeft" align="right" valign="top"><a id="a2dbb0d61fdd1a3889cf96fa7ac2ae4e2" name="a2dbb0d61fdd1a3889cf96fa7ac2ae4e2"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BETS_PER_ROUND_OBJ</b></td></tr>
-<tr class="separator:a2dbb0d61fdd1a3889cf96fa7ac2ae4e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35068c298ff6bd5c8fb149df8e17ee2f" id="r_a35068c298ff6bd5c8fb149df8e17ee2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a35068c298ff6bd5c8fb149df8e17ee2f">gsConcludeSingleGame</a> (<a class="el" href="struct_game_state.html">GameState</a> *)</td></tr>
+<tr class="memdesc:a35068c298ff6bd5c8fb149df8e17ee2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepares the <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct for a fresh game while preserving dealer button positions.  <br /></td></tr>
+<tr class="separator:a35068c298ff6bd5c8fb149df8e17ee2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains the logic of a poker game in a form of DI'able functions. See their arrangement and implementation in main.c. </p>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a id="a27a62f231a19c81fe816657d634bdc43" name="a27a62f231a19c81fe816657d634bdc43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27a62f231a19c81fe816657d634bdc43">&#9670;&#160;</a></span>gsAdvancePlayerTurn()</h2>
+<a id="a17ba2a5c24ccf837f0cc29f867d27a7d" name="a17ba2a5c24ccf837f0cc29f867d27a7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17ba2a5c24ccf837f0cc29f867d27a7d">&#9670;&#160;</a></span>gsAdvancePlayerTurn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,11 +165,6 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BETS_PER_ROU
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>tapout_pot_statuses</em>[], </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *</td>          <td class="paramname"><span class="paramname"><em>ruleSet</em>, </span></td>
         </tr>
         <tr>
@@ -190,9 +174,282 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BETS_PER_ROU
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Advances the player's turn by allowing them to take action and applying any changes causes by the chosen action. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">state</td><td>The current state of the game to modify accordingly. </td></tr>
+    <tr><td class="paramname">players</td><td>An array of Players to modify accordingly. </td></tr>
+    <tr><td class="paramname">ruleSet</td><td>The <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> on which some logic is based. </td></tr>
     <tr><td class="paramname">player_dec_override</td><td>Meant for unit-testing. A non-null pointer will override whatever the player's decision was. Keep in mind this value won't be validated! </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0656f934c08b52fae4dd08cb8195b7bb" name="a0656f934c08b52fae4dd08cb8195b7bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0656f934c08b52fae4dd08cb8195b7bb">&#9670;&#160;</a></span>gsAwardPot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gsAwardPot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_state.html">GameState</a> *</td>          <td class="paramname"><span class="paramname"><em>state</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>winners</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int</td>          <td class="paramname"><span class="paramname"><em>winners_count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines the winner(s) and pays them their winnings from the pot. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct to modify accordingly. </td></tr>
+    <tr><td class="paramname">players</td><td>An array of Players to modify accordingly. </td></tr>
+    <tr><td class="paramname">winners</td><td>An array containing indexes of winning Players. </td></tr>
+    <tr><td class="paramname">winners_count</td><td>The size of the winners array.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Tapped out winners receive their rewards first, the rest is then divided evenly between other winners. If the pot happened to be indivisible by amount of winners, small blind player receives the remainder. </p>
+
+</div>
+</div>
+<a id="a01980ae59c7d960f8b41b03d1407cc1c" name="a01980ae59c7d960f8b41b03d1407cc1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01980ae59c7d960f8b41b03d1407cc1c">&#9670;&#160;</a></span>gsCheckGameOverCondition()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool gsCheckGameOverCondition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *</td>          <td class="paramname"><span class="paramname"><em>rules</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if everyone but one player has any funds left. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">players</td><td>An array of Players to be modified accordingly. </td></tr>
+    <tr><td class="paramname">rules</td><td><a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> containing the amount of Players. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True, if the whole game should be ended. False, otherwise.</dd></dl>
+<p>If the condition is true, this would indicate end of the whole game. This function also reverts the "folded" and "tappedout" statuses for all Players with any funds left. Broke players are marked as folded right away, preventing them from being able to act again. </p>
+
+</div>
+</div>
+<a id="accdcd19918c414859b389005dad91308" name="accdcd19918c414859b389005dad91308"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accdcd19918c414859b389005dad91308">&#9670;&#160;</a></span>gsConcludeBettingRound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gsConcludeBettingRound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_state.html">GameState</a> *</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the amount of revealed community cards and increments the betting_round value of the passed <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct to modify. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35068c298ff6bd5c8fb149df8e17ee2f" name="a35068c298ff6bd5c8fb149df8e17ee2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35068c298ff6bd5c8fb149df8e17ee2f">&#9670;&#160;</a></span>gsConcludeSingleGame()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gsConcludeSingleGame </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_state.html">GameState</a> *</td>          <td class="paramname"><span class="paramname"><em>state</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prepares the <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct for a fresh game while preserving dealer button positions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct to modify.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Before entering a pre-flop betting round, make sure to call gsSetUpBettingRound() function. </p>
+
+</div>
+</div>
+<a id="a689a62e2ee5b6fd24604355e70911b02" name="a689a62e2ee5b6fd24604355e70911b02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a689a62e2ee5b6fd24604355e70911b02">&#9670;&#160;</a></span>gsCreateNew()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_game_state.html">GameState</a> * gsCreateNew </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *</td>          <td class="paramname"><span class="paramname"><em>rules</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Creates a new, clean and unconfigured <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rules</td><td>The <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> struct to base the creation of the <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> on. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the newly created struct. </dd></dl>
+
+</div>
+</div>
+<a id="a1f1533b766dc03948e712e7358c3ddee" name="a1f1533b766dc03948e712e7358c3ddee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f1533b766dc03948e712e7358c3ddee">&#9670;&#160;</a></span>gsDetermineWinners()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int gsDetermineWinners </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>winners</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *</td>          <td class="paramname"><span class="paramname"><em>rules</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_game_state.html">GameState</a> *</td>          <td class="paramname"><span class="paramname"><em>state</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_playing_card.html">PlayingCard</a> *</td>          <td class="paramname"><span class="paramname"><em>comm_cards</em>[]</span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determines the winner(s) and populates the winners array with their indexes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">winners</td><td>An array which will be filled with <a class="el" href="struct_player.html" title="Represents a single player.">Player</a> indexes. </td></tr>
+    <tr><td class="paramname">rules</td><td>The <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> struct containing the amount of Players. </td></tr>
+    <tr><td class="paramname">state</td><td>The <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> containing all_but_one_folded and revealed community cards count. </td></tr>
+    <tr><td class="paramname">players</td><td>An array of Players to modify accordingly. </td></tr>
+    <tr><td class="paramname">comm_cards</td><td>The community cards to analyze when determining who has got the best handrank. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The size of the populated winners array. In other words, how many winners there are.</dd></dl>
+<p>If the win happened because of everyone else folding, only one player who did not fold is awarded the whole pot. Otherwise, everyone's hands are compared, winners are pulled and awarded their fair share. </p>
+
+</div>
+</div>
+<a id="acbb100397b3092339c468d9615cda361" name="acbb100397b3092339c468d9615cda361"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acbb100397b3092339c468d9615cda361">&#9670;&#160;</a></span>gsPassDealerButton()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gsPassDealerButton </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_state.html">GameState</a> *</td>          <td class="paramname"><span class="paramname"><em>state</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *</td>          <td class="paramname"><span class="paramname"><em>rules</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pass the dealer button to the next player. Done once after each full round. This also causes the blind player statuses to move. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct to modify. </td></tr>
+    <tr><td class="paramname">rules</td><td>The <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> containing the amount of Players. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4651c63c33c5bf6315e392787f0ad7e1" name="a4651c63c33c5bf6315e392787f0ad7e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4651c63c33c5bf6315e392787f0ad7e1">&#9670;&#160;</a></span>gsSetUpBettingRound()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gsSetUpBettingRound </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_game_state.html">GameState</a> *</td>          <td class="paramname"><span class="paramname"><em>state</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_player.html">Player</a> *</td>          <td class="paramname"><span class="paramname"><em>players</em>[], </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_game_rule_set.html">GameRuleSet</a> *</td>          <td class="paramname"><span class="paramname"><em>ruleSet</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the members of a <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct according to its current betting_round value. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The <a class="el" href="struct_game_state.html" title="Represents the current state of a poker game.">GameState</a> struct to modify. </td></tr>
+    <tr><td class="paramname">players</td><td>An array of Players which might be modified if the round being set up is the pre-flop. </td></tr>
+    <tr><td class="paramname">ruleSet</td><td>The <a class="el" href="struct_game_rule_set.html" title="Represents a set of customizable rules of the poker game.">GameRuleSet</a> dictating current game's rules regarding small and big blinds. </td></tr>
   </table>
   </dd>
 </dl>
@@ -205,7 +462,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>MAX_BETS_PER_ROU
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="gamestate_8h.html">gamestate.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

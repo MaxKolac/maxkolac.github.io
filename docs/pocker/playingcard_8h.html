@@ -95,13 +95,12 @@ $(function(){initNavTree('playingcard_8h.html',''); initResizable(); });
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">playingcard.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Contains functions, constants and structs related to playing cards.  
+<p>Contains functions, constants and structs related to PlayingCards.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;string.h&gt;</code><br />
 </div>
@@ -117,13 +116,28 @@ Classes</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a2f77890b3efeda8d9d0dc03264698fad" id="r_a2f77890b3efeda8d9d0dc03264698fad"><td class="memItemLeft" align="right" valign="top"><a id="a2f77890b3efeda8d9d0dc03264698fad" name="a2f77890b3efeda8d9d0dc03264698fad"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>PIPS_PER_SUIT</b>&#160;&#160;&#160;13</td></tr>
+<tr class="memdesc:a2f77890b3efeda8d9d0dc03264698fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of different value cards under the same card symbol. <br /></td></tr>
 <tr class="separator:a2f77890b3efeda8d9d0dc03264698fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4989d61006e25851b3aa836ba95efcdf" id="r_a4989d61006e25851b3aa836ba95efcdf"><td class="memItemLeft" align="right" valign="top"><a id="a4989d61006e25851b3aa836ba95efcdf" name="a4989d61006e25851b3aa836ba95efcdf"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SUITS_COUNT</b>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a4989d61006e25851b3aa836ba95efcdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of different symbols in a single deck. <br /></td></tr>
 <tr class="separator:a4989d61006e25851b3aa836ba95efcdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb4e0ff16d88043e82ff42db09b7ae1" id="r_aceb4e0ff16d88043e82ff42db09b7ae1"><td class="memItemLeft" align="right" valign="top"><a id="aceb4e0ff16d88043e82ff42db09b7ae1" name="aceb4e0ff16d88043e82ff42db09b7ae1"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH</b>&#160;&#160;&#160;(4 * 13)</td></tr>
+<tr class="memdesc:aceb4e0ff16d88043e82ff42db09b7ae1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Amount of cards in a single deck. <br /></td></tr>
 <tr class="separator:aceb4e0ff16d88043e82ff42db09b7ae1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1816c03818529eb8ff7ac44ffb67fa6" id="r_ae1816c03818529eb8ff7ac44ffb67fa6"><td class="memItemLeft" align="right" valign="top"><a id="ae1816c03818529eb8ff7ac44ffb67fa6" name="ae1816c03818529eb8ff7ac44ffb67fa6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CARDNAME_MAX_LENGTH</b>&#160;&#160;&#160;(5 + 4 + 8 + 1)</td></tr>
+<tr class="memdesc:ae1816c03818529eb8ff7ac44ffb67fa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Longest name of a single <a class="el" href="struct_playing_card.html" title="Represents a single playing card.">PlayingCard</a>. Meant for char arrays that might hold them. <br /></td></tr>
+<tr class="separator:ae1816c03818529eb8ff7ac44ffb67fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4f5c367c62f3188210c95da4892e9a" id="r_aaa4f5c367c62f3188210c95da4892e9a"><td class="memItemLeft" align="right" valign="top"><a id="aaa4f5c367c62f3188210c95da4892e9a" name="aaa4f5c367c62f3188210c95da4892e9a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CARDS_PER_PLAYER</b>&#160;&#160;&#160;2</td></tr>
+<tr class="memdesc:aaa4f5c367c62f3188210c95da4892e9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of hole cards per <a class="el" href="struct_player.html" title="Represents a single player.">Player</a>. <br /></td></tr>
+<tr class="separator:aaa4f5c367c62f3188210c95da4892e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3305c5f87747da593e54426c1a051bd" id="r_af3305c5f87747da593e54426c1a051bd"><td class="memItemLeft" align="right" valign="top"><a id="af3305c5f87747da593e54426c1a051bd" name="af3305c5f87747da593e54426c1a051bd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>COMM_CARDS_COUNT</b>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:af3305c5f87747da593e54426c1a051bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The amount of community cards the dealer will place. <br /></td></tr>
+<tr class="separator:af3305c5f87747da593e54426c1a051bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -167,21 +181,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a5d29f6c13b990e4883ee85a1c78d7302" id="r_a5d29f6c13b990e4883ee85a1c78d7302"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d29f6c13b990e4883ee85a1c78d7302">getCardName</a> (<a class="el" href="struct_playing_card.html">PlayingCard</a> *, char *, int)</td></tr>
 <tr class="memdesc:a5d29f6c13b990e4883ee85a1c78d7302"><td class="mdescLeft">&#160;</td><td class="mdescRight">Populates a char array with the card's name.  <br /></td></tr>
 <tr class="separator:a5d29f6c13b990e4883ee85a1c78d7302"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ab2c2b53b35d4636ea0416847de84de0b" id="r_ab2c2b53b35d4636ea0416847de84de0b"><td class="memItemLeft" align="right" valign="top"><a id="ab2c2b53b35d4636ea0416847de84de0b" name="ab2c2b53b35d4636ea0416847de84de0b"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>PIPS_PER_SUIT_OBJ</b></td></tr>
-<tr class="separator:ab2c2b53b35d4636ea0416847de84de0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeea4002161804ab35a0b4925cd9d8894" id="r_aeea4002161804ab35a0b4925cd9d8894"><td class="memItemLeft" align="right" valign="top"><a id="aeea4002161804ab35a0b4925cd9d8894" name="aeea4002161804ab35a0b4925cd9d8894"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>SUITS_COUNT_OBJ</b></td></tr>
-<tr class="separator:aeea4002161804ab35a0b4925cd9d8894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4054ae22cbbef1df25e1304274241e6c" id="r_a4054ae22cbbef1df25e1304274241e6c"><td class="memItemLeft" align="right" valign="top"><a id="a4054ae22cbbef1df25e1304274241e6c" name="a4054ae22cbbef1df25e1304274241e6c"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ</b></td></tr>
-<tr class="separator:a4054ae22cbbef1df25e1304274241e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains functions, constants and structs related to playing cards. </p>
+<div class="textblock"><p>Contains functions, constants and structs related to PlayingCards. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a5370548e1424423a5fa2fe356a721db2" name="a5370548e1424423a5fa2fe356a721db2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5370548e1424423a5fa2fe356a721db2">&#9670;&#160;</a></span>Pip</h2>
@@ -230,10 +232,11 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ<
   <table class="params">
     <tr><td class="paramname">card</td><td>Pointer to a card to read. </td></tr>
     <tr><td class="paramname">buffer</td><td>The char array to fill. </td></tr>
-    <tr><td class="paramname">buffer_size</td><td>The length of the buffer array. The buffer will be filled with the card's name in a format of "Pips of Suit". For example "Ace of Spades". </td></tr>
+    <tr><td class="paramname">buffer_size</td><td>The length of the buffer array.</td></tr>
   </table>
   </dd>
 </dl>
+<p>The buffer will be filled with the card's name in a format of "Pips of Suit". For example "Ace of Spades". </p>
 
 </div>
 </div>
@@ -246,7 +249,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ<
         <tr>
           <td class="memname">const char * getPipName </td>
           <td>(</td>
-          <td class="paramtype">enum <a class="el" href="#a5370548e1424423a5fa2fe356a721db2">Pip</a></td>          <td class="paramname"><span class="paramname"><em>_pips</em></span></td><td>)</td>
+          <td class="paramtype">enum <a class="el" href="#a5370548e1424423a5fa2fe356a721db2">Pip</a></td>          <td class="paramname"><span class="paramname"><em>pips</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -255,10 +258,11 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ<
 <p>Returns a string literal containing the name of the given Pip enumerator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pips</td><td>Pip enumerator to get the name of. Returns the corresponding name of the passed Pip. Returns "ERR" if no match was found. </td></tr>
+    <tr><td class="paramname">pips</td><td>Pip enumerator to get the name of. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding name of the passed Pip as a string literal. Returns "ERR" if no match was found. </dd></dl>
 
 </div>
 </div>
@@ -271,7 +275,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ<
         <tr>
           <td class="memname">const char * getSuitName </td>
           <td>(</td>
-          <td class="paramtype">enum <a class="el" href="#af78e1c8ea5e6837b6ab9452a1e435e4e">Suit</a></td>          <td class="paramname"><span class="paramname"><em>_suits</em></span></td><td>)</td>
+          <td class="paramtype">enum <a class="el" href="#af78e1c8ea5e6837b6ab9452a1e435e4e">Suit</a></td>          <td class="paramname"><span class="paramname"><em>suit</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -280,10 +284,11 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ<
 <p>Returns a string literal containing the name of the given Suit enumerator. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">suits</td><td>Suit enumerator to get the name of. Returns the corresponding name of the passed Suit. Returns "ERR" if no match was found. </td></tr>
+    <tr><td class="paramname">suit</td><td>Suit enumerator to get the name of. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>The corresponding name of the passed Suit as a string literal. Returns "ERR" if no match was found. </dd></dl>
 
 </div>
 </div>
@@ -293,7 +298,7 @@ const int&#160;</td><td class="memItemRight" valign="bottom"><b>DECK_LENGTH_OBJ<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="playingcard_8h.html">playingcard.h</a></li>
-    <li class="footer">Generated on Sat Apr 13 2024 21:24:22 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+    <li class="footer">Generated on Wed May 8 2024 16:21:41 for poCker by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
   </ul>
 </div>
 </body>

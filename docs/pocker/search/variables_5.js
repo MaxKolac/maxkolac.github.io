@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ishuman_0',['isHuman',['../struct_player.html#a7ad52d0cef77e6b9d1329c07c9467874',1,'Player']]]
+  ['global_5fmsgs_0',['GLOBAL_MSGS',['../messages_8h.html#aac2263f72bbd48b3ee48ea2890312343',1,'messages.c']]]
 ];
